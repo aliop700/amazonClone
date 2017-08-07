@@ -1,0 +1,17 @@
+{
+  "name": "amazonclone",
+  "version": "1.0.0",
+  "description": "an clone to do e coomerce",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js "
+  },
+  "author": "ali safi",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.6"
+  }
+}
