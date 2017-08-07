@@ -33,6 +33,13 @@ bcrypt.genSalt(10,function(err,salt){
         user.password=hash;
         next();
     });
-})
+});
                
-}
+};
+
+/*Compare passwords to the database*/
+UserSchema.methods.comparePassword=function(password){
+  return bcrypt.compareSync(password,this.password);  
+};
+
+module.exports=mongoose.model('user',UserSchema);
